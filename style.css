@@ -1,0 +1,10 @@
+.footer__logo {
+  display: inline-block;
+}
+
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
