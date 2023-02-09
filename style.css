@@ -4,7 +4,6 @@
   --secondary-light-red: hsl(354, 100%, 66%);
   --neutral-gray: hsl(0, 0%, 59%);
   --neutral-very-dark-blue: hsl(209, 33%, 12%);
-  --margin-bottom: 20px;
 }
 
 * {
@@ -14,9 +13,13 @@
   font-family: "Libre Franklin", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
   overflow-x: hidden;
 
@@ -29,8 +32,10 @@ body {
 }
 
 .main {
-  max-width: 40%;
-  margin: 2em;
+  max-width: 43%;
+  box-sizing: border-box;
+  margin: 1em 1em 4em 1em;
+  padding: 1em;
 
   display: flex;
   flex-direction: column;
@@ -38,7 +43,8 @@ body {
 }
 
 .main__logo {
-  margin-bottom: var(--margin-bottom);
+  margin-bottom: 2em;
+  display: block;
 }
 
 .main__title {
@@ -54,22 +60,23 @@ body {
 }
 
 .main__subtitle {
-  margin-bottom: var(--margin-bottom);
+  margin-bottom: 1.5em;
   color: var(--neutral-very-dark-blue);
   line-height: 3;
+  text-align: center;
   font-weight: 300;
   font-size: 0.8em;
 }
 
 .container {
   width: 100%;
-  margin-bottom: var(--margin-bottom);
-
+  margin-bottom: 3em;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1em;
 }
+
 .container__input {
   width: 70%;
   padding: 1em 2em;
@@ -88,7 +95,7 @@ body {
 }
 
 .container__button {
-  width: 30%;
+  width: 35%;
   padding: 1em 2em;
   background-color: var(--primary-blue);
   color: hsl(0, 0%, 100%);
@@ -100,38 +107,55 @@ body {
   font-weight: 600;
   font-size: 0.7em;
 }
+.container__button:hover {
+  background-color: var(--secondary-pale-blue);
+}
 
 .main__image {
-  width: 100%;
+  max-width: 100%;
 }
 
 .footer {
+  margin: 2em;
+  font-size: 0.6em;
+  text-align: center;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .footer__logos {
+  margin-bottom: 2em;
   display: flex;
   align-items: center;
   gap: 1em;
 }
 
 .footer__logo {
+  padding: 0.4em;
   border: 1px solid var(--neutral-gray);
+  border-radius: 50%;
   fill: var(--primary-blue);
-  display: inline-block;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__logo:hover {
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
+  fill: hsl(0, 0%, 100%);
 }
 
 .footer__copyright {
   color: var(--neutral-gray);
-  text-align: center;
+
   font-weight: 300;
-  font-size: 0.6em;
 }
 
 .attribution {
-  text-align: center;
-  font-size: 0.6em;
+  line-height: 2;
 }
 
 .attribution a {
