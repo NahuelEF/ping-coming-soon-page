@@ -29,17 +29,18 @@
         <span class="main__title main__title--black"> soon! </span>
       </h1>
       <h2 class="main__subtitle">Subscribe and get notified</h2>
-      <div class="container">
+      <form id="form" action="#">
         <input
-          class="container__input"
+          class="form__input"
           type="email"
           placeholder="Your email address..."
-          id="input-email"
+          id="email"
+          required
         />
-        <button class="container__button" type="button" id="button-submit">
+        <button class="form__button" type="submit" id="button-submit">
           Notify Me
         </button>
-      </div>
+      </form>
       <img
         class="main__image"
         src="./images/illustration-dashboard.png"
@@ -109,9 +110,18 @@
       </p>
       <p class="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener noreferrer"
           >Frontend Mentor</a
-        >. Coded by <a href="#" target="_blank">Your Name Here</a>.
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/NahuelEF"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Nahuel Fedele</a
+        >.
       </p>
     </footer>
     <script src="./index.js"></script>

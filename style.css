@@ -69,7 +69,7 @@ body {
   font-size: 0.8em;
 }
 
-.container {
+#form {
   width: 100%;
   margin-bottom: 3em;
   display: flex;
@@ -78,7 +78,7 @@ body {
   gap: 0.5em;
 }
 
-.container__input {
+.form__input {
   width: 70%;
   padding: 1em 2em;
   background: none;
@@ -89,13 +89,16 @@ body {
   text-align: left;
   font-weight: 300;
   font-size: 0.7em;
+
+  display: flex;
+  flex-direction: column;
 }
-.container__input::placeholder {
+.form__input::placeholder {
   color: var(--neutral-gray);
   user-select: none;
 }
 
-.container__button {
+.form__button {
   width: 35%;
   padding: 1em 2em;
   background-color: var(--primary-blue);
@@ -108,7 +111,7 @@ body {
   font-weight: 600;
   font-size: 0.7em;
 }
-.container__button:hover {
+.form__button:hover {
   background-color: var(--secondary-pale-blue);
 }
 
@@ -176,15 +179,15 @@ body {
     font-size: inherit;
   }
 
-  .container {
+  #form {
     width: 90%;
     flex-direction: column;
   }
-  .container__input {
+  .form__input {
     width: 100%;
   }
 
-  .container__button {
+  .form__button {
     width: 100%;
   }
 }
