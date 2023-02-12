@@ -33,7 +33,7 @@ body {
 }
 
 .main {
-  max-width: 520px;
+  max-width: 600px;
   margin: 1em 1em 4em 1em;
   padding: 1em;
 
@@ -110,8 +110,8 @@ body {
 
 .error-message {
   display: none;
-  padding: 0 2.5em;
   color: var(--secondary-light-red);
+  padding: 0 2.5em;
 
   text-align: left;
   font-style: italic;
@@ -139,6 +139,7 @@ body {
 
 .form__button:hover {
   background-color: var(--secondary-pale-blue);
+  transition: 0.5s;
 }
 
 .main__image {
@@ -173,10 +174,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .footer__logo:hover {
   background-color: var(--primary-blue);
   border-color: var(--primary-blue);
   fill: var(--primary-white);
+  transition: 0.5s;
 }
 
 .footer__copyright {
@@ -194,6 +197,10 @@ body {
 }
 
 @media (max-width: 485px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .main {
     max-width: 100%;
   }
@@ -214,8 +221,8 @@ body {
   }
 
   .error-message {
-    text-align: center;
     margin-bottom: 1.5em;
+    text-align: center;
   }
 
   .form__button {
